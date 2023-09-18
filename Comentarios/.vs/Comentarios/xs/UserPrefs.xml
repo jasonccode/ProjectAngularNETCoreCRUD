@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{ECCEA1B4-73FF-4DEF-9B3C-507673773BEA}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Comentarios PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Comentarios/Migrations/20230915001920_v1.0.0.cs">
+    <Files>
+      <File FileName="Comentarios/AplicationDbContext.cs" />
+      <File FileName="Comentarios/Program.cs" Line="35" Column="5" />
+      <File FileName="Comentarios/Migrations/20230915001920_v1.0.0.cs" Line="27" Column="18" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Comentarios" expanded="True">
+            <Node name="Comentarios" expanded="True">
+              <Node name="Migrations" expanded="True">
+                <Node name="20230915001920_v1.0.0.cs" selected="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
