@@ -77,14 +77,48 @@ namespace Comentarios.Controllers
 
     // PUT api/values/5
     [HttpPut("{id}")]
-    public void Put(int id, [FromBody] string value)
+    public async Task<IActionResult> Put(int id, [FromBody] Comentario comentario)
     {
+      try
+      {
+        if (id != comentario.Id)
+        {
+          return BadRequest();
+        }
+
+        _context.Update(comentario);
+        await _context.SaveChangesAsync();
+        return Ok(new { message = "Comentariio actualizado con exito!" });
+
+      }
+      catch (Exception ex)
+      {
+        return BadRequest(ex.Message);
+      }
     }
 
     // DELETE api/values/5
     [HttpDelete("{id}")]
-    public void Delete(int id)
+    public async Task<IActionResult> Delete(int id)
     {
+      try
+      {
+        var comentario = await _context.Comentario.FindAsync(id);
+        
+        if (comentario == null)
+        {
+          return NotFound();
+        }
+        _context.Comentario.Remove(comentario);
+
+        await _context.SaveChangesAsync();
+
+        return Ok(new { message = "Comentario eliminado con exito!" });
+      }
+      catch (Exception ex)
+      {
+        return BadRequest(ex.Message);
+      }
     }
   }
 }

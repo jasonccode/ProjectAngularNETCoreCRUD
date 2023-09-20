@@ -1,28 +1,29 @@
 ﻿<Properties StartupConfiguration="{ECCEA1B4-73FF-4DEF-9B3C-507673773BEA}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Comentarios PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Comentarios/Program.cs">
     <Files>
-      <File FileName="Comentarios/Program.cs" Line="11" Column="1" />
+      <File FileName="Comentarios/Models/Comentario.cs" Line="19" Column="1" />
+      <File FileName="Comentarios/Program.cs" Line="9" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Comentarios" expanded="True">
+          <Node name="Comentarios" expanded="True" selected="True">
             <Node name="Comentarios" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Comentarios PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
