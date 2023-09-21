@@ -11,7 +11,11 @@ export class ComentarioService {
 
   constructor(private http: HttpClient) {}
 
-  getListComentario(): Observable<any>{
+  getListComentario(): Observable<any> {
     return this.http.get(this.myAppUrl + this.myApiUrl);
+  }
+
+  deleteComentario(id: number): Observable<any> {
+    return this.http.delete(this.myAppUrl + this.myApiUrl + id);
   }
 }

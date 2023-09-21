@@ -7,21 +7,8 @@ import { ComentarioService } from 'src/app/services/comentario.service';
   templateUrl: './list-comentarios.component.html',
   styleUrls: ['./list-comentarios.component.css'],
 })
-export class ListComentariosComponent  implements OnInit{
-  listComentarios: Comentario[] = [
-    {
-      titulo: 'Angular',
-      creador: 'Fernando',
-      fechaCreacion: new Date(),
-      texto: 'FrameWork',
-    },
-    {
-      titulo: 'React',
-      creador: 'Miguel',
-      fechaCreacion: new Date(),
-      texto: 'Libreria',
-    },
-  ];
+export class ListComentariosComponent implements OnInit {
+  listComentarios: Comentario[] = [];
 
   constructor(private _comentarioService: ComentarioService) {}
 
@@ -32,7 +19,19 @@ export class ListComentariosComponent  implements OnInit{
   getComentarios() {
     this._comentarioService.getListComentario().subscribe(
       (data) => {
-        console.log(data);
+        this.listComentarios = data;
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }
+
+  eliminarComentario(id: any) {
+    console.log(id);
+    this._comentarioService.deleteComentario(id).subscribe(
+      (data) => {
+        this.getComentarios();
       },
       (error) => {
         console.log(error);
