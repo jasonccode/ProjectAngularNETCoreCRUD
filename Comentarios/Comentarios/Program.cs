@@ -21,7 +21,11 @@ internal class Program
     builder.Services.AddNpgsql<AplicationDbContext>(builder.Configuration.GetConnectionString("DefaultConnection"));
     AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
-
+    builder.Services.AddCors(options =>
+    {
+      options.AddPolicy("CorsPolicy",
+      builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+    });
 
     var app = builder.Build();
 
@@ -31,6 +35,8 @@ internal class Program
       app.UseSwagger();
       app.UseSwaggerUI();
     }
+
+    app.UseCors("CorsPolicy");
 
     app.UseHttpsRedirection();
 
