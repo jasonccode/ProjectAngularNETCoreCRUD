@@ -18,4 +18,8 @@ export class ComentarioService {
   deleteComentario(id: number): Observable<any> {
     return this.http.delete(this.myAppUrl + this.myApiUrl + id);
   }
+
+  getComentario(id: number): Observable<any> {
+    return this.http.get(this.myAppUrl + this.myApiUrl + id);
+  }
 }

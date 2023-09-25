@@ -22,7 +22,7 @@
   <tbody>
     <tr *ngFor="let comentario of listComentarios">
       <td>
-        <a [routerLink]="['/ver', 2]">
+        <a [routerLink]="['/ver', comentario.id]">
           {{ comentario.titulo }}
         </a>
       </td>
