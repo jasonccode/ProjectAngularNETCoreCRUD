@@ -1,27 +1,58 @@
-# AngularCRUD
+CRUD-Angular-NET-Core-Entity-Framework-Core-Postgres
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Este proyecto es una aplicación CRUD desarrollada desde cero utilizando las siguientes tecnologías:
 
-## Development server
+Frontend
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Angular
+HTML
+CSS
+JavaScript
+Bootstrap 4
+Backend
 
-## Code scaffolding
+.NET Core 3.1
+Entity Framework Core 3.1
+Base de Datos
+Postgres
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Descripción del Proyecto
 
-## Build
+En el frontend, hemos creado componentes, reutilizado código, implementado servicios, gestionado la navegación entre componentes a través del enrutamiento (routing), desarrollado formularios y aplicado validaciones.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+En el backend, hemos construido una API que incluye cuatro métodos principales:
 
-## Running unit tests
+GET: Para obtener datos.
+POST: Para crear nuevos registros.
+PUT: Para actualizar registros existentes.
+DELETE: Para eliminar registros.
+Además, hemos utilizado Entity Framework Core para el mapeo objeto-relación (ORM) y para interactuar con la base de datos Postgres.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Durante este proyecto desarrolle un CRUD completo utilizando Angular, .NET Core y Entity Framework Core.
+Trabaje con Entity Framework Core para el mapeo objeto-relación (ORM).
+Reutilize componentes en tu aplicación Angular.
+Cree servicios RESTful en .NET Core.
+Gestione la base de datos Postgres con Entity Framework.
 
-## Running end-to-end tests
+Conocimientos y herramientas:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Conocimientos básicos de HTML, JavaScript y CSS.
+Familiaridad con .NET y C#.
+Conocimientos básicos en Angular (preferiblemente Angular 2 o superior).
+Tener instalados los siguientes elementos:
+Angular
+Node.js
+Visual Studio Code (VS Code)
+Visual Studio 2019 (o una versión compatible con .NET Core 3.1)
+MySQL
 
-## Further help
+Instrucciones de Uso
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Clona este repositorio en tu máquina local.
+Configura y ejecuta el frontend Angular utilizando ng serve. Navega a http://localhost:xxxx/ para ver la aplicación en tiempo real.
+Configura y ejecuta el backend .NET Core para habilitar la API y la interacción con la base de datos MySQL.
+Comienza a desarrollar tu propio proyecto basado en esta estructura y personalízalo según tus necesidades.
+Recursos Adicionales
+
+Puedes encontrar más información sobre Angular CLI en la Angular CLI Overview and Command Reference.
+¡Disfruta aprendiendo y desarrollando tu aplicación CRUD con esta pila tecnológica!
