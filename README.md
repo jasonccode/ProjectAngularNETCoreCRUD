@@ -50,7 +50,7 @@ Para aprovechar al máximo este curso, se recomienda tener los siguientes conoci
   - Node.js
   - Visual Studio Code (VS Code)
   - Visual Studio 2019 (o una versión compatible con .NET Core 3.1)
-  - MySQL
+  - Postgres
 
 ## Instrucciones de Uso
 
