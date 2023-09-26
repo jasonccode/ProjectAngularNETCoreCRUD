@@ -38,6 +38,7 @@ export class AgregarEditarComentariosComponent implements OnInit {
       this.accion = 'Editar';
       this._ComentarioService.getComentario(this.id).subscribe(
         (data) => {
+          this.comentario = data;
           this.agregarComentario.patchValue({
             titulo: data.titulo,
             texto: data.texto,
@@ -51,20 +52,39 @@ export class AgregarEditarComentariosComponent implements OnInit {
     }
   }
 
-  agregar() {
-    const comentario: Comentario = {
-      titulo: this.agregarComentario.get('titulo')?.value,
-      creador: this.agregarComentario.get('creador')?.value,
-      texto: this.agregarComentario.get('texto')?.value,
-      fechaCreacion: new Date(),
-    };
-    this._ComentarioService.saveComentario(comentario).subscribe(
-      (data) => {
-        this.router.navigate(['/']);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+  agregarEditarComentario() {
+    if (this.comentario == undefined) {
+      const comentario: Comentario = {
+        titulo: this.agregarComentario.get('titulo')?.value,
+        creador: this.agregarComentario.get('creador')?.value,
+        texto: this.agregarComentario.get('texto')?.value,
+        fechaCreacion: new Date(),
+      };
+      this._ComentarioService.saveComentario(comentario).subscribe(
+        (data) => {
+          this.router.navigate(['/']);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+    } else {
+      const comentario: Comentario = {
+        id: this.comentario.id,
+        titulo: this.agregarComentario.get('titulo')?.value,
+        creador: this.agregarComentario.get('creador')?.value,
+        texto: this.agregarComentario.get('texto')?.value,
+        fechaCreacion: this.comentario.fechaCreacion,
+      };
+
+      this._ComentarioService.updateComentario(this.id, comentario).subscribe(
+        (data) => {
+          this.router.navigate(['/']);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+    }
   }
 }
