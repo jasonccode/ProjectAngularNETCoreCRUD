@@ -1,58 +1,85 @@
-CRUD-Angular-NET-Core-Entity-Framework-Core-Postgres
+<!DOCTYPE html>
+<html>
 
-Este proyecto es una aplicación CRUD desarrollada desde cero utilizando las siguientes tecnologías:
+<head>
+    <title>CRUD-Angular-NET-Core-Entity-Framework-Core-Postgres</title>
+</head>
 
-Frontend
+<body>
 
-Angular
-HTML
-CSS
-JavaScript
-Bootstrap 4
-Backend
+    <h1>CRUD-Angular-NET-Core-Entity-Framework-Core-Postgres</h1>
 
-.NET Core 3.1
-Entity Framework Core 3.1
-Base de Datos
-Postgres
+    <p>Este proyecto es una aplicación CRUD desarrollada desde cero utilizando las siguientes tecnologías:</p>
 
-Descripción del Proyecto
+    <h3>Frontend</h3>
+    <ul>
+        <li>Angular</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap 4</li>
+    </ul>
 
-En el frontend, hemos creado componentes, reutilizado código, implementado servicios, gestionado la navegación entre componentes a través del enrutamiento (routing), desarrollado formularios y aplicado validaciones.
+    <h3>Backend</h3>
+    <ul>
+        <li>.NET Core 3.1</li>
+        <li>Entity Framework Core 3.1</li>
+    </ul>
 
-En el backend, hemos construido una API que incluye cuatro métodos principales:
+    <h3>Base de Datos</h3>
+    <p>Postgres</p>
 
-GET: Para obtener datos.
-POST: Para crear nuevos registros.
-PUT: Para actualizar registros existentes.
-DELETE: Para eliminar registros.
-Además, hemos utilizado Entity Framework Core para el mapeo objeto-relación (ORM) y para interactuar con la base de datos Postgres.
+    <h2>Descripción del Proyecto</h2>
+    <p>En el frontend, hemos creado componentes, reutilizado código, implementado servicios, gestionado la navegación entre componentes a través del enrutamiento (routing), desarrollado formularios y aplicado validaciones.</p>
 
-Durante este proyecto desarrolle un CRUD completo utilizando Angular, .NET Core y Entity Framework Core.
-Trabaje con Entity Framework Core para el mapeo objeto-relación (ORM).
-Reutilize componentes en tu aplicación Angular.
-Cree servicios RESTful en .NET Core.
-Gestione la base de datos Postgres con Entity Framework.
+    <p>En el backend, hemos construido una API que incluye cuatro métodos principales:</p>
+    <ul>
+        <li>GET: Para obtener datos.</li>
+        <li>POST: Para crear nuevos registros.</li>
+        <li>PUT: Para actualizar registros existentes.</li>
+        <li>DELETE: Para eliminar registros.</li>
+    </ul>
 
-Conocimientos y herramientas:
+    <p>Además, hemos utilizado Entity Framework Core para el mapeo objeto-relación (ORM) y para interactuar con la base de datos Postgres.</p>
 
-Conocimientos básicos de HTML, JavaScript y CSS.
-Familiaridad con .NET y C#.
-Conocimientos básicos en Angular (preferiblemente Angular 2 o superior).
-Tener instalados los siguientes elementos:
-Angular
-Node.js
-Visual Studio Code (VS Code)
-Visual Studio 2019 (o una versión compatible con .NET Core 3.1)
-MySQL
+    <h2>Lo que Aprenderás</h2>
+    <p>Durante este proyecto, aprenderás:</p>
+    <ul>
+        <li>Desarrollar un CRUD completo utilizando Angular, .NET Core y Entity Framework Core.</li>
+        <li>Trabajar con Entity Framework Core para el mapeo objeto-relación (ORM).</li>
+        <li>Reutilizar componentes en tu aplicación Angular.</li>
+        <li>Crear servicios RESTful en .NET Core.</li>
+        <li>Gestionar la base de datos Postgres con Entity Framework.</li>
+    </ul>
 
-Instrucciones de Uso
+    <h2>Requisitos Previos</h2>
+    <p>Para aprovechar al máximo este curso, se recomienda tener los siguientes conocimientos y herramientas:</p>
+    <ul>
+        <li>Conocimientos básicos de HTML, JavaScript y CSS.</li>
+        <li>Familiaridad con .NET y C#.</li>
+        <li>Conocimientos básicos en Angular (preferiblemente Angular 2 o superior).</li>
+        <li>Tener instalados los siguientes elementos:</li>
+        <ul>
+            <li>Angular</li>
+            <li>Node.js</li>
+            <li>Visual Studio Code (VS Code)</li>
+            <li>Visual Studio 2019 (o una versión compatible con .NET Core 3.1)</li>
+            <li>MySQL</li>
+        </ul>
+    </ul>
 
-Clona este repositorio en tu máquina local.
-Configura y ejecuta el frontend Angular utilizando ng serve. Navega a http://localhost:xxxx/ para ver la aplicación en tiempo real.
-Configura y ejecuta el backend .NET Core para habilitar la API y la interacción con la base de datos MySQL.
-Comienza a desarrollar tu propio proyecto basado en esta estructura y personalízalo según tus necesidades.
-Recursos Adicionales
+    <h2>Instrucciones de Uso</h2>
+    <ol>
+        <li>Clona este repositorio en tu máquina local.</li>
+        <li>Configura y ejecuta el frontend Angular utilizando <code>ng serve</code>. Navega a <code>http://localhost:xxxx/</code> para ver la aplicación en tiempo real.</li>
+        <li>Configura y ejecuta el backend .NET Core para habilitar la API y la interacción con la base de datos MySQL.</li>
+        <li>Comienza a desarrollar tu propio proyecto basado en esta estructura y personalízalo según tus necesidades.</li>
+    </ol>
 
-Puedes encontrar más información sobre Angular CLI en la Angular CLI Overview and Command Reference.
-¡Disfruta aprendiendo y desarrollando tu aplicación CRUD con esta pila tecnológica!
+    <h2>Recursos Adicionales</h2>
+    <p>Puedes encontrar más información sobre Angular CLI en la <a href="https://angular.io/cli">Angular CLI Overview and Command Reference</a>.</p>
+
+</body>
+
+</html>
+
