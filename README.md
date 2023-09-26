@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>CRUD-Angular-NET-Core-Entity-Framework-Core-Postgres</title>
-</head>
-
-<body>
-
     <h1>CRUD-Angular-NET-Core-Entity-Framework-Core-Postgres</h1>
 
     <p>Este proyecto es una aplicación CRUD desarrollada desde cero utilizando las siguientes tecnologías:</p>
@@ -79,7 +70,4 @@
     <h2>Recursos Adicionales</h2>
     <p>Puedes encontrar más información sobre Angular CLI en la <a href="https://angular.io/cli">Angular CLI Overview and Command Reference</a>.</p>
 
-</body>
-
-</html>
 
