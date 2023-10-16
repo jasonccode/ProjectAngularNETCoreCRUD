@@ -1,4 +1,4 @@
-# CRUD-Angular-NET-Core-Entity-Framework-Core-Postgres
+# CRUD-Angular-NET-Core-Entity-Framework-Core-PostgreSql
 
 ## Descripción del Proyecto
 
